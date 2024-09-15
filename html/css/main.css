@@ -67,6 +67,18 @@ h3{
     color: #D4C6B1;
 }
 
+.myProjects{
+    font-family: 'Impact', fantasy;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.welcome{
+    font-family: Avenir Light;
+    font-size: 20px;
+}
+
 .positionOnHome{
 	font-family: 'Andale Mono', monospace;
 	font-size: 30px;
@@ -165,6 +177,10 @@ h6{
     text-indent: 20px;
 }
 
+.projectsPage{
+    background-color: black;
+    color: white;
+}
 
 .aboutMeArea3 {
             position: relative; /* Positioning context for the boxes */
