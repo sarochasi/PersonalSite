@@ -1,3 +1,250 @@
-body{
-	background-color: lightgray;
+.bodyArea {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('laptop.jpg');
+    height: 100vh;
+}
+
+#mainContent {
+    height: 50vh; /* Set mainContent to occupy 50% of the viewport height */
+     /* Enable scrolling if content exceeds the height */
+}
+
+#header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    display: flex;
+    z-index:1000;
+    justify-content: center;
+    background: #080400;
+    border-bottom: none;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #000;
+}
+
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+    
+    border-bottom:none;
+}
+
+h3{
+	font-family: 'Impact', fantasy;
+	font-size: 30px;
+}
+
+.aboutMeArea{
+	background-color: black;
+}
+
+.nameOnHome{
+	font-family: 'Impact', fantasy;
+	font-size: 150px; /* Adjust the size */
+    font-weight: bold; /* Make it bold */
+    color: #333; /* Set text color */
+    text-align: center; /* Center the text */
+    line-height: 1.2; /* Adjust line height */
+    letter-spacing: 1px; /* Adjust spacing between letters */
+    color: #D4C6B1;
+}
+
+.positionOnHome{
+	font-family: 'Andale Mono', monospace;
+	font-size: 30px;
+	color:white;
+}
+
+.portfolio{
+	font-family: Linotype Didot;
+	font-size: 30px;
+	color: #BFAE93;
+	text-align: center;
+    padding: 50px 0;
+}
+
+.firstSection{
+	font-family: Linotype Didot;
+	font-size: 30px;
+	color: #BFAE93;
+	text-align: center;
+    padding: 50px 0;
+}
+
+.secondSection{
+    font-family: Linotype Didot;
+    font-size: 20px;
+    color: #BFAE93;
+    text-align: left;
+    padding: 50px 0;
+
+
+}
+
+.school{
+	font-size: 15px;
+    font-family: Avenir Light;
+    text-indent: 30px;
+}
+
+.aboutMeArea{
+    background-image: url(sunset.jpg);
+}
+
+.aboutMeArea2{
+    background-color: lightgrey;
+}
+
+.profile{
+    background-color: black;
+}
+
+.profileImg img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    min-width: 100%; /* Ensure the image covers the container */
+    min-height: 100%; /* Ensure the image covers the container */
+}
+
+.military img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    min-width: 100%; /* Ensure the image covers the container */
+    min-height: 100%; /* Ensure the image covers the container */
+}
+
+.military{
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+.profileImg{
+    overflow: hidden; /* Hide overflow */
+    position: relative;
+}
+
+.profileDetails{
+    text-align: left;
+    border-left-width: 20px;
+}
+
+.aBitAboutMe{
+    color: black;
+}
+
+h5{
+    font-family: 'Impact', fantasy;
+    font-size: 15px;
+    text-indent: 20px;
+}
+
+h6{
+    font-size: 20px;
+    text-indent: 20px;
+}
+
+
+
+.aboutMeArea3 {
+            position: relative; /* Positioning context for the boxes */
+            width: 100%; /* Set desired width for the container */
+            height: 450px; /* Set desired height for the container */
+            
+            overflow: hidden; /* Ensure overflow is hidden */
+            background-color: #E0E0E0;
+        }
+        .afterMilitary {
+            position: relative; /* Make the container a positioning context */
+            width: 100%; /* Full width of the aboutMeArea3 */
+            height: 100%; /* Full height of the aboutMeArea3 */
+
+        }
+        .box {
+            position: absolute; /* Position the boxes absolutely */
+            
+            display: flex; /* Center content */
+            justify-content: center; /* Center content horizontally */
+            align-items: center; /* Center content vertically */
+            border: 2px solid black; /* Optional: Border for visibility */
+        }
+        .box1 {
+            text-align: center;
+            font-family: Avenir Light;
+            font-size: 20px;
+            top: 100px; /* Adjust top position for overlap */
+            left: 300px; /* Adjust left position for overlap */
+            width: 700px; /* Set width for the boxes */
+            height: 300px; /* Set height for the boxes */
+            z-index: 2;
+            color: white;
+            background-color: black;
+
+        }
+
+        .box2 img{
+            position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the image */
+    min-width: 100%; /* Ensure the image covers the container */
+    min-height: 100%; /* Ensure the image covers the container */
+        }
+        .box2 {
+            
+            top: 0; /* Align to top */
+            left: 0; /* Align to left */
+            width: 400px; /* Set width for the boxes */
+            height: 300px; /* Set height for the boxes */
+            z-index: 1;
+        }
+
+.aboutMeArea4{
+    background-color: black;
+    color: white;
+    height: 300px;
+}
+
+.skills{
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    body {
+        font-size: 14px; /* Smaller font size on small screens */
+    }
+    
+    #mainContent {
+        height: auto; /* Allow mainContent to grow based on content */
+    }
+
+    header {
+        text-align: center; /* Center header content */
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
 }
