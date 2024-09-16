@@ -25,6 +25,54 @@ let projectsLink = document.getElementById("goToProjects");
 		showProjects();
 		e.preventDefault();
 	});
+
+	let viewProject1 = document.getElementById('viewProject1');
+	viewProject1.addEventListener('click',function(e){
+		displayProject1();
+		e.preventDefault;
+	});
+
+	let viewProject2 = document.getElementById('viewProject2');
+	viewProject2.addEventListener('click',function(e){
+		displayProject2();
+		e.preventDefault;
+	});
+
+	let viewProject3 = document.getElementById('viewProject3');
+	viewProject3.addEventListener('click',function(e){
+		displayProject3();
+		e.preventDefault;
+	});
+}
+
+function displayProject1(){
+	let project1 = document.querySelector('.project1');
+	let project2 = document.querySelector('.project2');
+	let project3 = document.querySelector('.project3');
+
+	project1.style.display = "block";
+	project2.style.display = "none";
+	project3.style.display = "none";
+}
+
+function displayProject2(){
+	let project1 = document.querySelector('.project1');
+	let project2 = document.querySelector('.project2');
+	let project3 = document.querySelector('.project3');
+
+	project1.style.display = "none";
+	project2.style.display = "block";
+	project3.style.display = "none";
+}
+
+function displayProject3(){
+	let project1 = document.querySelector('.project1');
+	let project2 = document.querySelector('.project2');
+	let project3 = document.querySelector('.project3');
+
+	project1.style.display = "none";
+	project2.style.display = "none";
+	project3.style.display = "block";
 }
 
 function showHome(){
@@ -37,10 +85,6 @@ function showHome(){
 	bodyArea.style.display = "block";
 	aboutMePage.style.display = "none";
 	projectsPage.style.display = "none";
-
-	//bodyArea.style.visibility = "visible";
-	//aboutMePage.style.visibility = "hidden";
-	//projectsPage.style.visibility = "hidden";
 
 }
 
