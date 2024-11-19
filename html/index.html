@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Sarocha - Full-stack Developer</title>
     <link rel="stylesheet" href="css/main.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -13,7 +13,7 @@
 <body>
 
     <!-- Header Navigation -->
-
+<div class="overflow-hidden">
     <div id="header">
     <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4">
 
@@ -21,6 +21,8 @@
         <li><a class="nav-link px-2 link-secondary" id="goToHome">Home</a></li>
         <li><a class="nav-link px-2 text-white" id="goToAboutMe">About me</a></li>
         <li><a class="nav-link px-2 text-white" id="goToProjects">Projects</a></li>
+        <li><a class="nav-link px-2 text-white" href="https://www.linkedin.com/in/sarocha-sitthi/" target="_blank">LinkedIn</a></li>
+        <li><a class="nav-link px-2 text-white" href="https://github.com/sarochasi" target="_blank">GitHub</a></li>
    
       </ul>
 
@@ -36,7 +38,7 @@
         <section class="portfolio">
             <div class="portfolio-content">
                 <h1 class="nameOnHome">Sarocha<br>Sitthi</h1>
-                <h6 class="positionOnHome">Java Full-Stack Developer</h6>
+                <h6 class="positionOnHome">Full-Stack Developer</h6>
                 <a href="https://www.sarochasi.com">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 252.492 252.492" role="img" aria-label="Plus Icon" color="white">
                         <path d="M252.492 117.246H135.246V0h-18v117.246H0v18h117.246v117.246h18V135.246h117.246v-18z"></path>
@@ -152,9 +154,10 @@
     <br><br>
     <p class="welcome" width="50px">Welcome to my portfolio. I have developed Java-based web applications that demonstrate my expertise in full-stack development. Utilizing Spring MVC, JDBC, JPA, and Hibernate, these projects encompass diverse functionality, from user authentication to database-driven features. Each project reflects my ability to implement robust back-end logic, intuitive front-end design, and efficient database integration, showcasing my skills in building dynamic, scalable, and user-friendly web applications.</p>
 
-    <div>
-        
-        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="border-top: 100px; padding-top: 100px;">
+    <div >
+    
+    <div class ="allProjects">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3" style="border-top: 100px; padding-top: 100px;">
     <div class="col">
         <div class="card shadow-sm">
             <img src="css/github.webp" class="card-img-top img-fluid" alt="Thumbnail">
@@ -162,7 +165,7 @@
                 <p class="card-text">GitHub</p>
                 <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                        <button type="button" class="btn btn-sm btn-outline-secondary" id="viewProject1">View</button>
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="viewProject1" data-bs-toggle="collapse" href="#collapseExample">View</button>
                     </div>
                 </div>
             </div>
@@ -198,13 +201,46 @@
         </div>
     </div>
         
+
+    <div class="col">
+        <div class="card shadow-sm">
+            <img src="css/trackmyjob.png" class="card-img-top img-fluid" alt="Thumbnail">
+            <div class="card-body">
+                <p class="card-text">TrackMyJob</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="viewProject4">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
+    <div class="col">
+        <div class="card shadow-sm">
+            <img src="css/ReelSync-.png" class="card-img-top img-fluid" alt="Thumbnail">
+            <div class="card-body">
+                <p class="card-text">ReelSync</p>
+                <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-sm btn-outline-secondary" id="viewProject5">View</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<div class="project1" style="display: none;">
-    <section class="container row" style="border-top: 100px; padding-top: 100px;">
+    </div>
+</div>
+
+<div>
+    <br>
+    <button type="button" class="btn btn-sm btn-outline-secondary projectList" id="ProjectList">See all Projects</button>
+
+<div class="project1 collapse" style="display: none;" id="collapseExample">
+    <section class="container row" style="border-top: 100px; padding-top: 100px;" >
         <section class="col-md-4">
-            <h3>GitHub</h3>
+            <h3 >GitHub</h3>
             <br>
             <h4>Project type</h4>
             <h6>GitHub</h6>
@@ -270,7 +306,7 @@
             <h4>GitHub link</h4>
             <h6><a href="https://github.com/sarochasi/MidtermProject" target="_blank">GitHub repository</a></h6>
             <h4>SpringFit</h4>
-            <h6><a href="http://52.14.134.98:8080/SpringFit/" target="_blank">springFit link</a></h6>
+            <h6><a href="http://52.14.134.98:8080/SpringFit/" target="_blank">SpringFit link</a></h6>
         </section>
 
         <section class="col-md-8">
@@ -333,6 +369,122 @@ git, GitHub
 </div>
 
 
+<div class="project4" style="display: none;">
+    <section class="container row" style="border-top: 100px; padding-top: 100px;">
+        <section class="col-md-4">
+            <h3>TrackMyJob</h3>
+            <br>
+            <h4>Project type</h4>
+            <h6>Java web application | Angular/Javascript Front end</h6>
+            <br>
+            <h4>GitHub link</h4>
+            <h6><a href="https://github.com/sarochasi/EventTrackerProject" target="_blank">GitHub repository</a></h6>
+            <h4>TrackMyJob</h4>
+            <h6><a href="http://52.14.134.98:8080/TrackMyJob/" target="_blank">TrackMyJob link</a></h6>
+        </section>
+
+        <section class="col-md-8">
+            <p>TrackMyJob is a web application designed to help users track thier job applications effiecielntly. The application allows users to create, update, delete, and view thier job applications, as well as manage different statuses and onsite/remote options. Built using Spring Boot and Spring Data JPA, TrackMyJob levereages RESTful services to provide a seamless user experience.</p>
+
+            <p>
+                <strong>Technologies Used:</strong>
+
+<ul>
+    <li>Java: Programming language used for the application.</li>
+    <li>Spring Boot: Framework for building the application and REST APIs.</li>
+    <li>Spring Data JPA: Used for ORM and database operations.</li>
+    <li>Hibernate: ORM implementation used by Spring Data JPA.</li>
+    <li>MySQL: Database management system to store application data.</li>
+    <li>JSON: Data format for sending and receiving data through REST APIs.</li>
+</ul>
+</p>
+
+<p>
+<strong>Key Features</strong>
+<ul>
+    <li>Job Listing: Displays a list of all job applications, including position, company, status, and other relevant details.</li>
+    <li>Job CRUD Operations:</li>
+    <ul>
+        <li>Create new job entries using a form with fields such as Position, Company, Status, and Description.</li>
+        <li>Edit existing jobs to update their details.</li>
+        <li>Delete job entries.</li>
+    </ul>
+    <li>Status Selection: Users can select the job status from predefined options such as "Not applied yet", "Applied", "Interviewed", "Offered", and "Rejected".</li>
+    <li>Onsite/Remote Option: Users can specify whether the job is Onsite, Remote, or Hybrid.</li>
+</ul>
+
+</p>
+
+               
+        </section>
+
+        
+    </section>
+</div>
+
+
+<div class="project5" style="display: none;">
+    <section class="container row" style="border-top: 100px; padding-top: 100px;">
+        <section class="col-md-4">
+            <h3>ReelSync</h3>
+            <br>
+            <h4>Project type</h4>
+            <h6>Java web application | Angular Front end</h6>
+            <br>
+            <h4>GitHub link</h4>
+            <h6><a href="https://github.com/sarochasi/FinalProject" target="_blank">GitHub repository</a></h6>
+            <h4>TrackMyJob</h4>
+            <h6><a href="http://52.14.134.98:8080/ReelSync/" target="_blank">ReelSync link</a></h6>
+        </section>
+
+        <section class="col-md-8">
+            <p>This full-stack Java project is the culmination of our learning, integrating everything we've studied into one cohesive application. The project is designed to provide authenticated and non-authenticated views, offer full C.R.U.D. (Create, Read, Update, Delete) functionality, and include a multi-level privilege system for managing user-generated data. The front-end uses Angular, while the back-end is a Java-based RESTful API connected to a MySQL database.
+
+This project is a collaborative effort where group members contributed to various aspects of the application, including database design, backend logic, security, and front-end development. It showcases a wide range of skills, from database schema design to front-end state management.</p>
+
+            <p>
+                <strong>Technologies Used:</strong>
+
+        <ul>
+            
+            <li>Frontend: Angular JavaScript</li>
+            <li>Backend: Java, Spring Boot (RESTful API)</li>
+            <li>Database: MySQL</li>
+            <li>ORM: JPA (Java Persistence API)</li>
+            <li>Security: Spring Security with BCrypt password hashing for user authentication</li>
+            <li>Version Control: Git and GitHub for collaboration</li>
+            <li>Dependency Management: Gradle</li>
+            <li>Testing: JUnit for unit testing the back-end</li>
+            <li>Development Environment: Spring Tool Suite (STS), Visual Studio Code (VS Code) for Angular development</li>
+            <li>External Tools: Postman for API testing, MySQL Workbench for database modeling and management</li>
+        </ul>
+</p>
+
+<p>
+    <strong>Key Features</strong>
+        <ul>
+            <li>User Authentication: The project includes both authenticated and non-authenticated views. Users must log in to access protected routes and perform C.R.U.D. operations.</li>
+            <li>C.R.U.D. Operations: The application allows users to create, read, update, and delete their own data. Privileged users can manage global data.</li>
+            <li>Role-based Access: Two levels of user roles—basic and privileged—determine the data manipulation capabilities within the application.</li>
+            <li>Security: Spring Security and BCrypt provide robust password encryption and user authentication.</li>
+        </ul>
+
+</p>
+
+               
+        </section>
+
+        
+    </section>
+</div>
+
+
+</div>
+
+
+
+
+
 </div>    
 
 </div>
@@ -364,9 +516,14 @@ git, GitHub
 
     <!-- Footer -->
    <footer class="mt-auto">
+    <br>
+    <br>
         <p>&copy; 2024 Sarocha Sitthi</p>
     </footer>
+
+   </div> 
 <script type="text/javascript" src="images/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
+
